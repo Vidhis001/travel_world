@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Travel Blog </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Travel world</h2>
+        <ul>
+            <li><a href="#posts">Destinations</a></li>
+            <li><a href="#comments-section">Comments</a></li>
+            <li><a href="login.html">Login / Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Explore world</h1>
+        <p>Discover popular destinations around the world and share your experiences</p>
+    </header>
+    
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="search-wrapper">
+            <input type="text" id="search" placeholder="Search a destination..." oninput="searchDestination()">
+        </div>
+        <div id="map" class="map"></div>
+        <div id="loading" class="loading">Loading map...</div>
+    </section>
+
+    <!-- Posts Section -->
+    <section id="posts" class="posts-section">
+        <!-- Blog posts will be dynamically loaded here -->
+    </section>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt67JdlSqM6olg4PXE8VMIgWjKXdZAfm0&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
