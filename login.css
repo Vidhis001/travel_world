@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3f2fd;
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #004f7c;
+}
+
+form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #00bcd4;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0288d1;
+}
+
+#switchMessage {
+    text-align: center;
+    color: #004f7c;
+    cursor: pointer;
+    font-size: 14px;
+}
